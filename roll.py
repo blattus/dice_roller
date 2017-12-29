@@ -1,3 +1,13 @@
+''''
+roll.py
+
+Accepts input in format 'xdy(+z)' where:
+x = number of dice
+y = side of each die (e.g., a d12 is a 12-sided die)
+z = optionally, a modifier to add to the result of the roll
+
+'''
+
 import random
 import argparse
 
@@ -31,6 +41,7 @@ def roll_dice(roll):
 		dice = int(dice_and_modifier[0])
 		modifier = int(dice_and_modifier[1])
 
+	# otherwise set the modifier to 0
 	else:
 		dice = int(parsed_roll[1])
 		modifier = 0
