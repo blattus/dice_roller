@@ -50,7 +50,7 @@ def roll_dice(roll):
 	dice_roll = 0
 
 	print('rolls: ', end='')
-	for number_of_dice in range(1,multiplier+1):
+	for number_of_dice in range(multiplier):
 		roll = random.randint(1,dice)
 		print('{}'.format(roll), end=' + ')
 		dice_roll += roll
